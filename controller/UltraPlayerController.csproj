@@ -1,0 +1,555 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4620A73-4245-4AA7-9666-9284BBCD9A27}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UltraPlayerController</RootNamespace>
+    <AssemblyName>UltraPlayerCommander</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Addon\AAddon.cs" />
+    <Compile Include="Model\Addon\AVisibleAddon.cs" />
+    <Compile Include="Model\Addon\D3dVisibleAddon.cs" />
+    <Compile Include="Model\Addon\ImageD3dVisibleAddon.cs" />
+    <Compile Include="Model\Addon\ISubtitleParser.cs" />
+    <Compile Include="Model\Addon\SubRipSubtitleParser.cs" />
+    <Compile Include="Model\Addon\Subtitle.cs" />
+    <Compile Include="Model\Addon\TextD3dVisibleAddon.cs" />
+    <Compile Include="Model\Communication\AMessage.cs" />
+    <Compile Include="Model\Communication\Request\ARequest.cs" />
+    <Compile Include="Model\Communication\Request\DisplayDevicesInfoRequest.cs" />
+    <Compile Include="Model\Communication\Request\MidiOutputPortInfoRequest.cs" />
+    <Compile Include="Model\Communication\Request\MidiPropertiesRequest.cs" />
+    <Compile Include="Model\Communication\Request\RemoveAddonRequest.cs" />
+    <Compile Include="Model\Communication\Request\ResumeRequest.cs" />
+    <Compile Include="Model\Communication\Request\SetDlsRequest.cs" />
+    <Compile Include="Model\Communication\Request\SetFrequencyRequest.cs" />
+    <Compile Include="Model\Communication\Request\SetMidiOutputPortRequest.cs" />
+    <Compile Include="Model\Communication\Request\SetPlayerTypeRequest.cs" />
+    <Compile Include="Model\Communication\Request\SetRateRequest.cs" />
+    <Compile Include="Model\Communication\Request\Sound3dRequest.cs" />
+    <Compile Include="Model\Communication\Request\SoundFxRequest.cs" />
+    <Compile Include="Model\Communication\Request\VideoLayoutRequest.cs" />
+    <Compile Include="Model\Communication\Request\VolumeRequest.cs" />
+    <Compile Include="Model\Communication\Request\WindowLayoutRequest.cs" />
+    <Compile Include="Model\Communication\Request\PauseRequest.cs" />
+    <Compile Include="Model\Communication\Request\PlayRequest.cs" />
+    <Compile Include="Model\Communication\RequestFactory.cs" />
+    <Compile Include="Model\Communication\ResponseFactory.cs" />
+    <Compile Include="Model\Communication\Request\SeekRequest.cs" />
+    <Compile Include="Model\Communication\Request\SetImageRequest.cs" />
+    <Compile Include="Model\Communication\Request\SetTextRequest.cs" />
+    <Compile Include="Model\Communication\Request\StopRequest.cs" />
+    <Compile Include="Model\Communication\Response\AResponse.cs" />
+    <Compile Include="Model\Communication\Response\DisplayDeviceInfoResponse.cs" />
+    <Compile Include="Model\Communication\Response\MidiOutputPortInfoResponse.cs" />
+    <Compile Include="Model\Communication\Response\MidiPropertiesResponse.cs" />
+    <Compile Include="Model\Communication\Response\PauseResponse.cs" />
+    <Compile Include="Model\Communication\Response\PlayResponse.cs" />
+    <Compile Include="Model\Communication\Response\RemoveAddonResponse.cs" />
+    <Compile Include="Model\Communication\Response\ResumeResponse.cs" />
+    <Compile Include="Model\Communication\Response\SeekResponse.cs" />
+    <Compile Include="Model\Communication\Response\SetDlsResponse.cs" />
+    <Compile Include="Model\Communication\Response\SetFrequencyResponse.cs" />
+    <Compile Include="Model\Communication\Response\SetImageResponse.cs" />
+    <Compile Include="Model\Communication\Response\SetMidiOutputPortResponse.cs" />
+    <Compile Include="Model\Communication\Response\SetPlayerTypeResponse.cs" />
+    <Compile Include="Model\Communication\Response\SetRateResponse.cs" />
+    <Compile Include="Model\Communication\Response\SetTextResponse.cs" />
+    <Compile Include="Model\Communication\Response\Sound3dResponse.cs" />
+    <Compile Include="Model\Communication\Response\SoundFxResponse.cs" />
+    <Compile Include="Model\Communication\Response\StopResponse.cs" />
+    <Compile Include="Model\Communication\Response\TerminationResponse.cs" />
+    <Compile Include="Model\Communication\Response\VideoLayoutResponse.cs" />
+    <Compile Include="Model\Communication\Response\VolumeResponse.cs" />
+    <Compile Include="Model\Communication\Response\WindowLayoutResponse.cs" />
+    <Compile Include="Model\Communication\TCPClient.cs" />
+    <Compile Include="Model\Communication\Request\TerminationRequest.cs" />
+    <Compile Include="Model\Enumerations\AddonType.cs" />
+    <Compile Include="Model\Exceptions\GeneralException.cs" />
+    <Compile Include="Model\SkinInfo.cs" />
+    <Compile Include="Model\SkinLoader.cs" />
+    <Compile Include="Model\Sound3d.cs" />
+    <Compile Include="Model\SoundFx\ASoundFx.cs" />
+    <Compile Include="Model\SoundFx\ChorusSoundFx.cs" />
+    <Compile Include="Model\SoundFx\CompressorSoundFx.cs" />
+    <Compile Include="Model\SoundFx\DistortionSoundFx.cs" />
+    <Compile Include="Model\SoundFx\EchoSoundFx.cs" />
+    <Compile Include="Model\SoundFx\FlangerSoundFx.cs" />
+    <Compile Include="Model\SoundFx\GargleSoundFx.cs" />
+    <Compile Include="Model\SoundFx\ParamEqSoundFx.cs" />
+    <Compile Include="Model\SoundFx\PhaseType.cs" />
+    <Compile Include="Model\SoundFx\PhaseTypeToStringConverter.cs" />
+    <Compile Include="Model\SoundFx\ReverbSoundFx.cs" />
+    <Compile Include="Model\SoundFx\SoundFxType.cs" />
+    <Compile Include="Model\SoundFx\WaveformToStringConverter.cs" />
+    <Compile Include="Model\SoundFx\WaveformType.cs" />
+    <Compile Include="Model\Utilities\ICollectionLoader.cs" />
+    <Compile Include="Model\Utilities\PlayerTypeToStringConverter.cs" />
+    <Compile Include="Model\VisibleObject.cs" />
+    <Compile Include="Model\DisplayDevice.cs" />
+    <Compile Include="Model\Enumerations\MessageType.cs" />
+    <Compile Include="Model\Enumerations\ServerResponseType.cs" />
+    <Compile Include="Model\Enumerations\PlaybackState.cs" />
+    <Compile Include="Model\Enumerations\PlayerType.cs" />
+    <Compile Include="Model\Exceptions\BaseException.cs" />
+    <Compile Include="Model\Exceptions\ParserException.cs" />
+    <Compile Include="Model\Layout.cs" />
+    <Compile Include="Model\MediaFile.cs" />
+    <Compile Include="Model\Settings\PlayerSettings.cs" />
+    <Compile Include="Model\Settings\SettingsManager.cs" />
+    <Compile Include="Model\Utilities\AApplicationSettings.cs" />
+    <Compile Include="Model\Utilities\MediaInfo\InfoKindType.cs" />
+    <Compile Include="Model\Utilities\MediaInfo\MediaInfo.cs" />
+    <Compile Include="Model\Utilities\MediaInfo\StreamKindType.cs" />
+    <Compile Include="Model\VideoFile.cs" />
+    <Compile Include="Resources\Communication\Protocol.cs" />
+    <Compile Include="Resources\CustomControls\AlphaForm\AlphaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\AudioPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\AudioPlayerForm.Designer.cs">
+      <DependentUpon>AudioPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\LabeledExtendedSliderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\LabeledExtendedSliderControl.Designer.cs">
+      <DependentUpon>LabeledExtendedSliderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AudioPlayer\SingleFxPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\SingleFxPropertiesControl.Designer.cs">
+      <DependentUpon>SingleFxPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AudioPlayer\EffectsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\EffectsForm.Designer.cs">
+      <DependentUpon>EffectsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CustomControls\ProgressBar\ProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\PhasePropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\PhasePropertiesControl.Designer.cs">
+      <DependentUpon>PhasePropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AudioPlayer\SoundFxPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\SoundFxPropertiesControl.Designer.cs">
+      <DependentUpon>SoundFxPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AudioPlayer\SpatializationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\SpatializationForm.Designer.cs">
+      <DependentUpon>SpatializationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AudioPlayer\SpatializationPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\SpatializationPropertiesControl.Designer.cs">
+      <DependentUpon>SpatializationPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AudioPlayer\WaveformPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AudioPlayer\WaveformPropertiesControl.Designer.cs">
+      <DependentUpon>WaveformPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\ExtendedSliderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\ExtendedSliderControl.Designer.cs">
+      <DependentUpon>ExtendedSliderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\PlayerSkinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\PlayerSkinForm.Designer.cs">
+      <DependentUpon>PlayerSkinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\PlaybackPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\PlaybackPropertiesControl.Designer.cs">
+      <DependentUpon>PlaybackPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\PlaybackWindow\PlaybackWindowPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\PlaybackWindow\PlaybackWindowPropertiesControl.Designer.cs">
+      <DependentUpon>PlaybackWindowPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\PlaybackWindow\PlaybackWindowPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\PlaybackWindow\PlaybackWindowPropertiesForm.Designer.cs">
+      <DependentUpon>PlaybackWindowPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\PlayerCommunicator\PlayerCommunicatorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\PlayerCommunicator\PlayerCommunicatorControl.Designer.cs">
+      <DependentUpon>PlayerCommunicatorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\PlayerCommunicator\PlayerCommunicatorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\PlayerCommunicator\PlayerCommunicatorInfo.Designer.cs">
+      <DependentUpon>PlayerCommunicatorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Events\Delegates.cs" />
+    <Compile Include="View\MidiPlayer\MidiPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MidiPlayer\MidiPlayerForm.Designer.cs">
+      <DependentUpon>MidiPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MidiPlayer\MusicPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MidiPlayer\MusicPropertiesForm.Designer.cs">
+      <DependentUpon>MusicPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MultiMediaPlayer\VideoLayoutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MultiMediaPlayer\VideoLayoutControl.Designer.cs">
+      <DependentUpon>VideoLayoutControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\Playlist\PlaylistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\Playlist\PlaylistForm.Designer.cs">
+      <DependentUpon>PlaylistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleMediaPlayer\ImageAddonPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SingleMediaPlayer\ImageAddonPropertiesControl.Designer.cs">
+      <DependentUpon>ImageAddonPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleMediaPlayer\SingleMediaPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SingleMediaPlayer\SingleMediaPlayer.Designer.cs">
+      <DependentUpon>SingleMediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\PlaybackControl\PlaybackControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\PlaybackControl\PlaybackControl.Designer.cs">
+      <DependentUpon>PlaybackControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlayerSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlayerSelectionForm.Designer.cs">
+      <DependentUpon>PlayerSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\AudioPlayer\AudioPlayerForm.resx">
+      <DependentUpon>AudioPlayerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\LabeledExtendedSliderControl.resx">
+      <DependentUpon>LabeledExtendedSliderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AudioPlayer\EffectsForm.resx">
+      <DependentUpon>EffectsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CustomControls\ProgressBar\ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AudioPlayer\PhasePropertiesControl.resx">
+      <DependentUpon>PhasePropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AudioPlayer\SingleFxPropertiesControl.resx">
+      <DependentUpon>SingleFxPropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AudioPlayer\SoundFxPropertiesControl.resx">
+      <DependentUpon>SoundFxPropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AudioPlayer\SpatializationForm.resx">
+      <DependentUpon>SpatializationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AudioPlayer\SpatializationPropertiesControl.resx">
+      <DependentUpon>SpatializationPropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AudioPlayer\WaveformPropertiesControl.resx">
+      <DependentUpon>WaveformPropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\ExtendedSliderControl.resx">
+      <DependentUpon>ExtendedSliderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\PlayerSkinForm.resx">
+      <DependentUpon>PlayerSkinForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\PlaybackPropertiesControl.resx">
+      <DependentUpon>PlaybackPropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\PlaybackWindow\PlaybackWindowPropertiesControl.resx">
+      <DependentUpon>PlaybackWindowPropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\PlaybackWindow\PlaybackWindowPropertiesForm.resx">
+      <DependentUpon>PlaybackWindowPropertiesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\PlayerCommunicator\PlayerCommunicatorControl.resx">
+      <DependentUpon>PlayerCommunicatorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\PlayerCommunicator\PlayerCommunicatorInfo.resx">
+      <DependentUpon>PlayerCommunicatorInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MidiPlayer\MidiPlayerForm.resx">
+      <DependentUpon>MidiPlayerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MidiPlayer\MusicPropertiesForm.resx">
+      <DependentUpon>MusicPropertiesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MultiMediaPlayer\VideoLayoutControl.resx">
+      <DependentUpon>VideoLayoutControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\Playlist\PlaylistForm.resx">
+      <DependentUpon>PlaylistForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleMediaPlayer\ImageAddonPropertiesControl.resx">
+      <DependentUpon>ImageAddonPropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleMediaPlayer\SingleMediaPlayer.resx">
+      <DependentUpon>SingleMediaPlayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\PlaybackControl\PlaybackControl.resx">
+      <DependentUpon>PlaybackControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlayerSelectionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlayerSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MultiMediaPlayer\MultiPlayerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MultiPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommonControls\Playlist\PlaylistControl.resx">
+      <DependentUpon>PlaylistControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Settings\PlayerSettingsControl.resx">
+      <DependentUpon>PlayerSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Settings\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleMediaPlayer\AddonsForm.resx">
+      <DependentUpon>AddonsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleMediaPlayer\TextAddonPropertiesControl.resx">
+      <DependentUpon>TextAddonPropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Model\VisibleLayout.cs" />
+    <Compile Include="View\MultiMediaPlayer\MultiPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MultiMediaPlayer\MultiPlayerForm.Designer.cs">
+      <DependentUpon>MultiPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonControls\Playlist\PlaylistControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CommonControls\Playlist\PlaylistControl.Designer.cs">
+      <DependentUpon>PlaylistControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\PlayerSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Settings\PlayerSettingsControl.Designer.cs">
+      <DependentUpon>PlayerSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Settings\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleMediaPlayer\AddonsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SingleMediaPlayer\AddonsForm.Designer.cs">
+      <DependentUpon>AddonsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleMediaPlayer\TextAddonPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SingleMediaPlayer\TextAddonPropertiesControl.Designer.cs">
+      <DependentUpon>TextAddonPropertiesControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ultraPlayerCommanderAudioLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ultraPlayerCommanderMidiLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ultraPlayerCommanderMultiLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ultraPlayerCommanderAudioLogo.psd" />
+    <None Include="Resources\ultraPlayerCommanderMidiLogo.psd" />
+    <None Include="Resources\ultraPlayerCommanderMultiLogo.psd" />
+    <None Include="Resources\ultraPlayerCommanderSingleLogo.jpg" />
+    <None Include="Resources\ultraPlayerCommanderSingleLogo.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CustomControls\AlphaForm\marker.png" />
+    <Content Include="Resources\CustomControls\AlphaForm\Transformer.png" />
+    <Content Include="Resources\Libs\MediaInfo.dll" />
+    <Content Include="Resources\soundSpace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\libs\Utilities\Utilities\Utilities.csproj">
+      <Project>{F082BBEE-4DCA-460B-80D6-2876C80A5F09}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy R:\libs\mediaInfo\x64\MediaInfo.dll $(ProjectDir)$(OutDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UltraPlayerController.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DefaultCommunicationPort" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">32000</Value>
+    </Setting>
+    <Setting Name="PlayerExecutable" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">UltraPlayer.exe</Value>
+    </Setting>
+    <Setting Name="SettingsFilename" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">UltraPlayer.settings</Value>
+    </Setting>
+    <Setting Name="SettingNamePort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">port</Value>
+    </Setting>
+    <Setting Name="SettingNameSkinfilename" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">skinfilename</Value>
+    </Setting>
+    <Setting Name="SettingNamePlayerIp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">playerip</Value>
+    </Setting>
+    <Setting Name="SkinsFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">skins</Value>
+    </Setting>
+    <Setting Name="SkinsExtension" Type="System.String" Scope="User">
+      <Value Profile="(Default)">uskin</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

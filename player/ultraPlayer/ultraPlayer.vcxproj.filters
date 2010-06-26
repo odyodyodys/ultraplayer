@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Communication">
+      <UniqueIdentifier>{55e198e1-736b-4a17-a345-0d22fae81459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exceptions">
+      <UniqueIdentifier>{07ba5be8-c2ec-4ea2-87b9-436a746db125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{8edba78d-9758-42c0-b0b4-1c3cbd9a2e77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\DirectX">
+      <UniqueIdentifier>{7b07c254-8f7a-4333-b280-8073c8bf3458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\DirectX\Direct3d">
+      <UniqueIdentifier>{53e715cb-7218-47a2-b09a-e8a0ac6abdd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\DirectX\DirectShow">
+      <UniqueIdentifier>{4d78e58d-41d1-4eb2-8bda-036e844d2281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\DirectX\DirectxUtilities">
+      <UniqueIdentifier>{84d59dca-12ef-4a3a-b636-2495f5256812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\System">
+      <UniqueIdentifier>{a02bf016-cd9d-41b1-a4e0-2968842c7d70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback">
+      <UniqueIdentifier>{aa084338-3ff6-4b7b-b198-04f14b99bad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Players">
+      <UniqueIdentifier>{ac0a69bc-7bc0-4076-97ae-49a9a613daea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Players\MultiVideo">
+      <UniqueIdentifier>{01c4d8c7-b940-4ae8-a6ef-74d08737df80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Players\Midi">
+      <UniqueIdentifier>{6102001b-b410-40e2-8be9-6d7345ca3a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Players\Audio">
+      <UniqueIdentifier>{b4bbd70f-432b-4e42-823d-fe16eeb96e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Players\Audio\SoundEffects">
+      <UniqueIdentifier>{b389c17e-190e-4422-96cb-873d18466b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Players\Audio\SoundEffects\Enumerations">
+      <UniqueIdentifier>{ec4bfd61-2de5-4528-8e27-176854d75a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Players\SingleVideo">
+      <UniqueIdentifier>{8a3eae80-d8ae-4ee3-9fe9-b49e6d8c076d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Environment">
+      <UniqueIdentifier>{f30440ec-5fc9-4d4f-be0b-a5fd9e041e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Playback\Addons">
+      <UniqueIdentifier>{fda87e87-ad84-451b-98b5-4d8a1342e5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{18aa8055-7433-45f5-989c-6ed374ac2870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageHandling">
+      <UniqueIdentifier>{88d35698-7e5b-42dd-8119-058eaad1fbe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageHandling\Request">
+      <UniqueIdentifier>{35161e99-1adb-4947-98cb-fbbb5c72d7cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageHandling\Response">
+      <UniqueIdentifier>{ee3f62ec-4b6f-4699-85d4-9bb8e8124ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageHandling\Converters">
+      <UniqueIdentifier>{8ddeba0f-8416-41c5-90b0-f90718ec7d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageHandling\Enumerations">
+      <UniqueIdentifier>{721ca371-7c94-4bcd-a2ca-302cca231b1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TCPListenerHelper.cpp">
+      <Filter>Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServer.cpp">
+      <Filter>Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="Layout.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="StringHelper.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="VisibleLayout.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="VisibleObject.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeLevelConverter.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveFileValidator.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneScene.cpp">
+      <Filter>Utilities\DirectX\Direct3d</Filter>
+    </ClCompile>
+    <ClCompile Include="DshowFilterUtils.cpp">
+      <Filter>Utilities\DirectX\DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="Rot.cpp">
+      <Filter>Utilities\DirectX\DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT.cpp">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTEffectMap.cpp">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTenum.cpp">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTgui.cpp">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTMesh.cpp">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTmisc.cpp">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTSettingsDlg.cpp">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTsound.cpp">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayDevice.cpp">
+      <Filter>Utilities\System</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtils.cpp">
+      <Filter>Utilities\System</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorUtils.cpp">
+      <Filter>Utilities\System</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInstructor.cpp">
+      <Filter>Playback</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowManager.cpp">
+      <Filter>Playback</Filter>
+    </ClCompile>
+    <ClCompile Include="ADShowPlayer.cpp">
+      <Filter>Playback\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="AGraphManager.cpp">
+      <Filter>Playback\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="APlayer.cpp">
+      <Filter>Playback\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaybackEventNotifier.cpp">
+      <Filter>Playback\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerFactory.cpp">
+      <Filter>Playback\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiVideoGraphManager.cpp">
+      <Filter>Playback\Players\MultiVideo</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiVideoPlayer.cpp">
+      <Filter>Playback\Players\MultiVideo</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiPlayer.cpp">
+      <Filter>Playback\Players\Midi</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiPortInfo.cpp">
+      <Filter>Playback\Players\Midi</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiWrapper.cpp">
+      <Filter>Playback\Players\Midi</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioPlayer.cpp">
+      <Filter>Playback\Players\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundFxManager.cpp">
+      <Filter>Playback\Players\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ASoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="ChorusSoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressorSoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="DistortionSoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="EchoSoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="FlangerSoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="GargleSoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamEqSoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverbSoundFx.cpp">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="AllocatorPresenter.cpp">
+      <Filter>Playback\Players\SingleVideo</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleVideoGraphManager.cpp">
+      <Filter>Playback\Players\SingleVideo</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleVideoPlayer.cpp">
+      <Filter>Playback\Players\SingleVideo</Filter>
+    </ClCompile>
+    <ClCompile Include="APlayerEnvironment.cpp">
+      <Filter>Playback\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="ComEnabledPlayerEnvironment.cpp">
+      <Filter>Playback\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3dVmr9DshowPlayerEnvironment.cpp">
+      <Filter>Playback\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="DshowPlayerEnvironment.cpp">
+      <Filter>Playback\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Vmr9DshowPlayerEnvironment.cpp">
+      <Filter>Playback\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="AAddon.cpp">
+      <Filter>Playback\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="AD3dVisibleAddon.cpp">
+      <Filter>Playback\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="AVisibleAddon.cpp">
+      <Filter>Playback\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageD3dVisibleAddon.cpp">
+      <Filter>Playback\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="TextD3dVisibleAddon.cpp">
+      <Filter>Playback\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationArguments.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="CommunicationProtocol.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="CommunicationResources.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaybackResources.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="AMessage.cpp">
+      <Filter>MessageHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="MessagePipe.cpp">
+      <Filter>MessageHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestFactory.cpp">
+      <Filter>MessageHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestHandlerSelector.cpp">
+      <Filter>MessageHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundFxFactory.cpp">
+      <Filter>MessageHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="ARequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayDevicesInfoRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiOutputPortInfoRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiPropertiesRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveAddonRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="ResumeRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="SeekRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDlsRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="SetFrequencyRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="SetImageRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="SetMidiOutputPortRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="SetRateRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTextRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound3dRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundFxRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="StopRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="TerminationRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoLayoutRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowLayoutRequest.cpp">
+      <Filter>MessageHandling\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="AResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayDevicesInfoResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralFailureResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiOutputPortInfoResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiPropertiesResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveAddonResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="ResumeResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="SeekResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDlsResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="SetFrequencyResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="SetImageResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="SetMidiOutputPortResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="SetRateResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTextResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound3dResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundFxResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="StopResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="TerminationResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoLayoutResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowLayoutResponse.cpp">
+      <Filter>MessageHandling\Response</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageTypeToStringConverter.cpp">
+      <Filter>MessageHandling\Converters</Filter>
+    </ClCompile>
+    <ClCompile Include="PhaseToStringConverter.cpp">
+      <Filter>MessageHandling\Converters</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundFxPartHeaderToSoundFxTypeConverter.cpp">
+      <Filter>MessageHandling\Converters</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveformToStringConverter.cpp">
+      <Filter>MessageHandling\Converters</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTypeToStringConverter.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="SetPlayerTypeRequest.cpp" />
+    <ClCompile Include="SetPlayerTypeResponse.cpp" />
+    <ClCompile Include="ultraPlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TCPListenerHelper.h">
+      <Filter>Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServer.h">
+      <Filter>Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="CommunicationException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ConverterException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="HandlerException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializationFailedException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidArgumentException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="NotImplementedException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ParserException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaybackException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ValidationFailedException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="IConverter.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ICopyable.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="IStringParser.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="IValidator.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Layout.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="NumericToStringConverter.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHelper.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="VisibleLayout.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="VisibleObject.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeLevelConverter.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveFileValidator.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomVertex.h">
+      <Filter>Utilities\DirectX\Direct3d</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneScene.h">
+      <Filter>Utilities\DirectX\Direct3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Position3d.h">
+      <Filter>Utilities\DirectX\Direct3d</Filter>
+    </ClInclude>
+    <ClInclude Include="DshowFilterUtils.h">
+      <Filter>Utilities\DirectX\DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="Rot.h">
+      <Filter>Utilities\DirectX\DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="dxstdafx.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTEffectMap.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTenum.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTgui.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTMesh.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTmisc.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTSettingsDlg.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTsound.h">
+      <Filter>Utilities\DirectX\DirectxUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayDevice.h">
+      <Filter>Utilities\System</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtils.h">
+      <Filter>Utilities\System</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorUtils.h">
+      <Filter>Utilities\System</Filter>
+    </ClInclude>
+    <ClInclude Include="IPlaybackEventHandler.h">
+      <Filter>Playback</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInstructor.h">
+      <Filter>Playback</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowManager.h">
+      <Filter>Playback</Filter>
+    </ClInclude>
+    <ClInclude Include="ADShowPlayer.h">
+      <Filter>Playback\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="AGraphManager.h">
+      <Filter>Playback\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="APlayer.h">
+      <Filter>Playback\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaybackEventNotifier.h">
+      <Filter>Playback\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerFactory.h">
+      <Filter>Playback\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerType.h">
+      <Filter>Playback\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiVideoGraphManager.h">
+      <Filter>Playback\Players\MultiVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiVideoPlayer.h">
+      <Filter>Playback\Players\MultiVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiEffectType.h">
+      <Filter>Playback\Players\Midi</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiPlayer.h">
+      <Filter>Playback\Players\Midi</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiPortInfo.h">
+      <Filter>Playback\Players\Midi</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiWrapper.h">
+      <Filter>Playback\Players\Midi</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioPlayer.h">
+      <Filter>Playback\Players\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundFxManager.h">
+      <Filter>Playback\Players\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ASoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="ChorusSoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="CompressorSoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="DistortionSoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="EchoSoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="FlangerSoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="GargleSoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamEqSoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="ReverbSoundFx.h">
+      <Filter>Playback\Players\Audio\SoundEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="PhaseType.h">
+      <Filter>Playback\Players\Audio\SoundEffects\Enumerations</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundFxType.h">
+      <Filter>Playback\Players\Audio\SoundEffects\Enumerations</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveformType.h">
+      <Filter>Playback\Players\Audio\SoundEffects\Enumerations</Filter>
+    </ClInclude>
+    <ClInclude Include="AddonType.h">
+      <Filter>Playback\Players\SingleVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="AllocatorPresenter.h">
+      <Filter>Playback\Players\SingleVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleVideoGraphManager.h">
+      <Filter>Playback\Players\SingleVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleVideoPlayer.h">
+      <Filter>Playback\Players\SingleVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="APlayerEnvironment.h">
+      <Filter>Playback\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="ComEnabledPlayerEnvironment.h">
+      <Filter>Playback\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3dVmr9DshowPlayerEnvironment.h">
+      <Filter>Playback\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="DshowPlayerEnvironment.h">
+      <Filter>Playback\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Vmr9DshowPlayerEnvironment.h">
+      <Filter>Playback\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="AAddon.h">
+      <Filter>Playback\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="AD3dVisibleAddon.h">
+      <Filter>Playback\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="AddonManager.h">
+      <Filter>Playback\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="AExpandable.h">
+      <Filter>Playback\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="AVisibleAddon.h">
+      <Filter>Playback\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageD3dVisibleAddon.h">
+      <Filter>Playback\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="TextD3dVisibleAddon.h">
+      <Filter>Playback\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationArguments.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationHeaders.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="CommunicationProtocol.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="CommunicationResources.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaybackResources.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="AMessage.h">
+      <Filter>MessageHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="IRequestHandler.h">
+      <Filter>MessageHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="MessagePipe.h">
+      <Filter>MessageHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestFactory.h">
+      <Filter>MessageHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHandlerSelector.h">
+      <Filter>MessageHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundFxFactory.h">
+      <Filter>MessageHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="ARequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayDevicesInfoRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiOutputPortInfoRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiPropertiesRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveAddonRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="ResumeRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="SeekRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDlsRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="SetFrequencyRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="SetImageRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="SetMidiOutputPortRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="SetRateRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="SetTextRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound3dRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundFxRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="StopRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="TerminationRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoLayoutRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowLayoutRequest.h">
+      <Filter>MessageHandling\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="AResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayDevicesInfoResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralFailureResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiOutputPortInfoResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiPropertiesResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveAddonResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="ResumeResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="SeekResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDlsResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="SetFrequencyResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="SetImageResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="SetMidiOutputPortResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="SetRateResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="SetTextResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound3dResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundFxResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="StopResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="TerminationResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoLayoutResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowLayoutResponse.h">
+      <Filter>MessageHandling\Response</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageTypeToStringConverter.h">
+      <Filter>MessageHandling\Converters</Filter>
+    </ClInclude>
+    <ClInclude Include="PhaseToStringConverter.h">
+      <Filter>MessageHandling\Converters</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundFxPartHeaderToSoundFxTypeConverter.h">
+      <Filter>MessageHandling\Converters</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveformToStringConverter.h">
+      <Filter>MessageHandling\Converters</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageType.h">
+      <Filter>MessageHandling\Enumerations</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaybackResultType.h">
+      <Filter>MessageHandling\Enumerations</Filter>
+    </ClInclude>
+    <ClInclude Include="ResponseType.h">
+      <Filter>MessageHandling\Enumerations</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTypeToStringConverter.h" />
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="SetPlayerTypeRequest.h" />
+    <ClInclude Include="SetPlayerTypeResponse.h" />
+    <ClInclude Include="ultraPlayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lightBlueSaxo.bmp">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UltraPlayer.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

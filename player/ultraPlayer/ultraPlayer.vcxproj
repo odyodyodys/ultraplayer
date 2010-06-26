@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E6A7C37A-24D3-49D3-AF4F-FBD0E6ABCDE8}</ProjectGuid>
+    <RootNamespace>ultraPlayer</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>s:\Samples\Multimedia\DirectShow\BaseClasses;s:\Include;t:\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;shlwapi.lib;D3d9.lib;d3dx9.lib;strmbasd.lib;dsound.lib;dxguid.lib;dxerr9.lib;d3dx9dt.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>t:\Lib;s:\Samples\Multimedia\DirectShow\BaseClasses\Debug;s:\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>s:\Samples\Multimedia\DirectShow\BaseClasses;s:\Include;t:\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;shlwapi.lib;D3d9.lib;d3dx9.lib;strmbasd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>t:\Lib\x86;s:\Samples\Multimedia\DirectShow\BaseClasses\Debug;s:\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>s:\Samples\Multimedia\DirectShow\BaseClasses;s:\Include;t:\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;strmbase.lib;Strmiids.lib;D3d9.lib;dsound.lib;dxguid.lib;dxerr9.lib;d3dx9dt.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>s:\Lib;s:\Samples\Multimedia\DirectShow\BaseClasses\Release;t:\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>s:\Samples\Multimedia\DirectShow\BaseClasses;s:\Include;t:\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;strmbase.lib;Strmiids.lib;D3d9.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>s:\Lib;s:\Samples\Multimedia\DirectShow\BaseClasses\Release;t:\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="TCPListenerHelper.cpp" />
+    <ClCompile Include="TCPServer.cpp" />
+    <ClCompile Include="Layout.cpp" />
+    <ClCompile Include="StringHelper.cpp" />
+    <ClCompile Include="VisibleLayout.cpp" />
+    <ClCompile Include="VisibleObject.cpp" />
+    <ClCompile Include="VolumeLevelConverter.cpp" />
+    <ClCompile Include="WaveFileValidator.cpp" />
+    <ClCompile Include="PlaneScene.cpp" />
+    <ClCompile Include="DshowFilterUtils.cpp" />
+    <ClCompile Include="Rot.cpp" />
+    <ClCompile Include="DXUT.cpp" />
+    <ClCompile Include="DXUTEffectMap.cpp" />
+    <ClCompile Include="DXUTenum.cpp" />
+    <ClCompile Include="DXUTgui.cpp" />
+    <ClCompile Include="DXUTMesh.cpp" />
+    <ClCompile Include="DXUTmisc.cpp" />
+    <ClCompile Include="DXUTSettingsDlg.cpp" />
+    <ClCompile Include="DXUTsound.cpp" />
+    <ClCompile Include="DisplayDevice.cpp" />
+    <ClCompile Include="FileUtils.cpp" />
+    <ClCompile Include="MonitorUtils.cpp" />
+    <ClCompile Include="PlayerInstructor.cpp" />
+    <ClCompile Include="WindowManager.cpp" />
+    <ClCompile Include="ADShowPlayer.cpp" />
+    <ClCompile Include="AGraphManager.cpp" />
+    <ClCompile Include="APlayer.cpp" />
+    <ClCompile Include="PlaybackEventNotifier.cpp" />
+    <ClCompile Include="PlayerFactory.cpp" />
+    <ClCompile Include="MultiVideoGraphManager.cpp" />
+    <ClCompile Include="MultiVideoPlayer.cpp" />
+    <ClCompile Include="MidiPlayer.cpp" />
+    <ClCompile Include="MidiPortInfo.cpp" />
+    <ClCompile Include="MidiWrapper.cpp" />
+    <ClCompile Include="AudioPlayer.cpp" />
+    <ClCompile Include="SoundFxManager.cpp" />
+    <ClCompile Include="ASoundFx.cpp" />
+    <ClCompile Include="ChorusSoundFx.cpp" />
+    <ClCompile Include="CompressorSoundFx.cpp" />
+    <ClCompile Include="DistortionSoundFx.cpp" />
+    <ClCompile Include="EchoSoundFx.cpp" />
+    <ClCompile Include="FlangerSoundFx.cpp" />
+    <ClCompile Include="GargleSoundFx.cpp" />
+    <ClCompile Include="ParamEqSoundFx.cpp" />
+    <ClCompile Include="ReverbSoundFx.cpp" />
+    <ClCompile Include="AllocatorPresenter.cpp" />
+    <ClCompile Include="SingleVideoGraphManager.cpp" />
+    <ClCompile Include="SingleVideoPlayer.cpp" />
+    <ClCompile Include="APlayerEnvironment.cpp" />
+    <ClCompile Include="ComEnabledPlayerEnvironment.cpp" />
+    <ClCompile Include="Direct3dVmr9DshowPlayerEnvironment.cpp" />
+    <ClCompile Include="DshowPlayerEnvironment.cpp" />
+    <ClCompile Include="Vmr9DshowPlayerEnvironment.cpp" />
+    <ClCompile Include="AAddon.cpp" />
+    <ClCompile Include="AD3dVisibleAddon.cpp" />
+    <ClCompile Include="AVisibleAddon.cpp" />
+    <ClCompile Include="ImageD3dVisibleAddon.cpp" />
+    <ClCompile Include="TextD3dVisibleAddon.cpp" />
+    <ClCompile Include="ApplicationArguments.cpp" />
+    <ClCompile Include="CommunicationProtocol.cpp" />
+    <ClCompile Include="CommunicationResources.cpp" />
+    <ClCompile Include="PlaybackResources.cpp" />
+    <ClCompile Include="AMessage.cpp" />
+    <ClCompile Include="MessagePipe.cpp" />
+    <ClCompile Include="RequestFactory.cpp" />
+    <ClCompile Include="RequestHandlerSelector.cpp" />
+    <ClCompile Include="SoundFxFactory.cpp" />
+    <ClCompile Include="ARequest.cpp" />
+    <ClCompile Include="DisplayDevicesInfoRequest.cpp" />
+    <ClCompile Include="MidiOutputPortInfoRequest.cpp" />
+    <ClCompile Include="MidiPropertiesRequest.cpp" />
+    <ClCompile Include="PauseRequest.cpp" />
+    <ClCompile Include="PlayRequest.cpp" />
+    <ClCompile Include="RemoveAddonRequest.cpp" />
+    <ClCompile Include="ResumeRequest.cpp" />
+    <ClCompile Include="SeekRequest.cpp" />
+    <ClCompile Include="SetDlsRequest.cpp" />
+    <ClCompile Include="SetFrequencyRequest.cpp" />
+    <ClCompile Include="SetImageRequest.cpp" />
+    <ClCompile Include="SetMidiOutputPortRequest.cpp" />
+    <ClCompile Include="SetRateRequest.cpp" />
+    <ClCompile Include="SetTextRequest.cpp" />
+    <ClCompile Include="Sound3dRequest.cpp" />
+    <ClCompile Include="SoundFxRequest.cpp" />
+    <ClCompile Include="StopRequest.cpp" />
+    <ClCompile Include="TerminationRequest.cpp" />
+    <ClCompile Include="VideoLayoutRequest.cpp" />
+    <ClCompile Include="VolumeRequest.cpp" />
+    <ClCompile Include="WindowLayoutRequest.cpp" />
+    <ClCompile Include="AResponse.cpp" />
+    <ClCompile Include="DisplayDevicesInfoResponse.cpp" />
+    <ClCompile Include="GeneralFailureResponse.cpp" />
+    <ClCompile Include="MidiOutputPortInfoResponse.cpp" />
+    <ClCompile Include="MidiPropertiesResponse.cpp" />
+    <ClCompile Include="PauseResponse.cpp" />
+    <ClCompile Include="PlayResponse.cpp" />
+    <ClCompile Include="RemoveAddonResponse.cpp" />
+    <ClCompile Include="ResumeResponse.cpp" />
+    <ClCompile Include="SeekResponse.cpp" />
+    <ClCompile Include="SetDlsResponse.cpp" />
+    <ClCompile Include="SetFrequencyResponse.cpp" />
+    <ClCompile Include="SetImageResponse.cpp" />
+    <ClCompile Include="SetMidiOutputPortResponse.cpp" />
+    <ClCompile Include="SetRateResponse.cpp" />
+    <ClCompile Include="SetTextResponse.cpp" />
+    <ClCompile Include="Sound3dResponse.cpp" />
+    <ClCompile Include="SoundFxResponse.cpp" />
+    <ClCompile Include="StopResponse.cpp" />
+    <ClCompile Include="TerminationResponse.cpp" />
+    <ClCompile Include="VideoLayoutResponse.cpp" />
+    <ClCompile Include="VolumeResponse.cpp" />
+    <ClCompile Include="WindowLayoutResponse.cpp" />
+    <ClCompile Include="MessageTypeToStringConverter.cpp" />
+    <ClCompile Include="PhaseToStringConverter.cpp" />
+    <ClCompile Include="SoundFxPartHeaderToSoundFxTypeConverter.cpp" />
+    <ClCompile Include="WaveformToStringConverter.cpp" />
+    <ClCompile Include="PlayerTypeToStringConverter.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="SetPlayerTypeRequest.cpp" />
+    <ClCompile Include="SetPlayerTypeResponse.cpp" />
+    <ClCompile Include="ultraPlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TCPListenerHelper.h" />
+    <ClInclude Include="TCPServer.h" />
+    <ClInclude Include="BaseException.h" />
+    <ClInclude Include="CommunicationException.h" />
+    <ClInclude Include="ConverterException.h" />
+    <ClInclude Include="HandlerException.h" />
+    <ClInclude Include="InitializationFailedException.h" />
+    <ClInclude Include="InvalidArgumentException.h" />
+    <ClInclude Include="NotImplementedException.h" />
+    <ClInclude Include="ParserException.h" />
+    <ClInclude Include="PlaybackException.h" />
+    <ClInclude Include="ValidationFailedException.h" />
+    <ClInclude Include="IConverter.h" />
+    <ClInclude Include="ICopyable.h" />
+    <ClInclude Include="IStringParser.h" />
+    <ClInclude Include="IValidator.h" />
+    <ClInclude Include="Layout.h" />
+    <ClInclude Include="NumericToStringConverter.h" />
+    <ClInclude Include="StringHelper.h" />
+    <ClInclude Include="VisibleLayout.h" />
+    <ClInclude Include="VisibleObject.h" />
+    <ClInclude Include="VolumeLevelConverter.h" />
+    <ClInclude Include="WaveFileValidator.h" />
+    <ClInclude Include="CustomVertex.h" />
+    <ClInclude Include="PlaneScene.h" />
+    <ClInclude Include="Position3d.h" />
+    <ClInclude Include="DshowFilterUtils.h" />
+    <ClInclude Include="Rot.h" />
+    <ClInclude Include="dxstdafx.h" />
+    <ClInclude Include="DXUT.h" />
+    <ClInclude Include="DXUTEffectMap.h" />
+    <ClInclude Include="DXUTenum.h" />
+    <ClInclude Include="DXUTgui.h" />
+    <ClInclude Include="DXUTMesh.h" />
+    <ClInclude Include="DXUTmisc.h" />
+    <ClInclude Include="DXUTSettingsDlg.h" />
+    <ClInclude Include="DXUTsound.h" />
+    <ClInclude Include="DisplayDevice.h" />
+    <ClInclude Include="FileUtils.h" />
+    <ClInclude Include="MonitorUtils.h" />
+    <ClInclude Include="IPlaybackEventHandler.h" />
+    <ClInclude Include="PlayerInstructor.h" />
+    <ClInclude Include="WindowManager.h" />
+    <ClInclude Include="ADShowPlayer.h" />
+    <ClInclude Include="AGraphManager.h" />
+    <ClInclude Include="APlayer.h" />
+    <ClInclude Include="PlaybackEventNotifier.h" />
+    <ClInclude Include="PlayerFactory.h" />
+    <ClInclude Include="PlayerType.h" />
+    <ClInclude Include="MultiVideoGraphManager.h" />
+    <ClInclude Include="MultiVideoPlayer.h" />
+    <ClInclude Include="MidiEffectType.h" />
+    <ClInclude Include="MidiPlayer.h" />
+    <ClInclude Include="MidiPortInfo.h" />
+    <ClInclude Include="MidiWrapper.h" />
+    <ClInclude Include="AudioPlayer.h" />
+    <ClInclude Include="SoundFxManager.h" />
+    <ClInclude Include="ASoundFx.h" />
+    <ClInclude Include="ChorusSoundFx.h" />
+    <ClInclude Include="CompressorSoundFx.h" />
+    <ClInclude Include="DistortionSoundFx.h" />
+    <ClInclude Include="EchoSoundFx.h" />
+    <ClInclude Include="FlangerSoundFx.h" />
+    <ClInclude Include="GargleSoundFx.h" />
+    <ClInclude Include="ParamEqSoundFx.h" />
+    <ClInclude Include="ReverbSoundFx.h" />
+    <ClInclude Include="PhaseType.h" />
+    <ClInclude Include="SoundFxType.h" />
+    <ClInclude Include="WaveformType.h" />
+    <ClInclude Include="AddonType.h" />
+    <ClInclude Include="AllocatorPresenter.h" />
+    <ClInclude Include="SingleVideoGraphManager.h" />
+    <ClInclude Include="SingleVideoPlayer.h" />
+    <ClInclude Include="APlayerEnvironment.h" />
+    <ClInclude Include="ComEnabledPlayerEnvironment.h" />
+    <ClInclude Include="Direct3dVmr9DshowPlayerEnvironment.h" />
+    <ClInclude Include="DshowPlayerEnvironment.h" />
+    <ClInclude Include="Vmr9DshowPlayerEnvironment.h" />
+    <ClInclude Include="AAddon.h" />
+    <ClInclude Include="AD3dVisibleAddon.h" />
+    <ClInclude Include="AddonManager.h" />
+    <ClInclude Include="AExpandable.h" />
+    <ClInclude Include="AVisibleAddon.h" />
+    <ClInclude Include="ImageD3dVisibleAddon.h" />
+    <ClInclude Include="TextD3dVisibleAddon.h" />
+    <ClInclude Include="ApplicationArguments.h" />
+    <ClInclude Include="ApplicationHeaders.h" />
+    <ClInclude Include="CommunicationProtocol.h" />
+    <ClInclude Include="CommunicationResources.h" />
+    <ClInclude Include="PlaybackResources.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="AMessage.h" />
+    <ClInclude Include="IRequestHandler.h" />
+    <ClInclude Include="MessagePipe.h" />
+    <ClInclude Include="RequestFactory.h" />
+    <ClInclude Include="RequestHandlerSelector.h" />
+    <ClInclude Include="SoundFxFactory.h" />
+    <ClInclude Include="ARequest.h" />
+    <ClInclude Include="DisplayDevicesInfoRequest.h" />
+    <ClInclude Include="MidiOutputPortInfoRequest.h" />
+    <ClInclude Include="MidiPropertiesRequest.h" />
+    <ClInclude Include="PauseRequest.h" />
+    <ClInclude Include="PlayRequest.h" />
+    <ClInclude Include="RemoveAddonRequest.h" />
+    <ClInclude Include="ResumeRequest.h" />
+    <ClInclude Include="SeekRequest.h" />
+    <ClInclude Include="SetDlsRequest.h" />
+    <ClInclude Include="SetFrequencyRequest.h" />
+    <ClInclude Include="SetImageRequest.h" />
+    <ClInclude Include="SetMidiOutputPortRequest.h" />
+    <ClInclude Include="SetRateRequest.h" />
+    <ClInclude Include="SetTextRequest.h" />
+    <ClInclude Include="Sound3dRequest.h" />
+    <ClInclude Include="SoundFxRequest.h" />
+    <ClInclude Include="StopRequest.h" />
+    <ClInclude Include="TerminationRequest.h" />
+    <ClInclude Include="VideoLayoutRequest.h" />
+    <ClInclude Include="VolumeRequest.h" />
+    <ClInclude Include="WindowLayoutRequest.h" />
+    <ClInclude Include="AResponse.h" />
+    <ClInclude Include="DisplayDevicesInfoResponse.h" />
+    <ClInclude Include="GeneralFailureResponse.h" />
+    <ClInclude Include="MidiOutputPortInfoResponse.h" />
+    <ClInclude Include="MidiPropertiesResponse.h" />
+    <ClInclude Include="PauseResponse.h" />
+    <ClInclude Include="PlayResponse.h" />
+    <ClInclude Include="RemoveAddonResponse.h" />
+    <ClInclude Include="ResumeResponse.h" />
+    <ClInclude Include="SeekResponse.h" />
+    <ClInclude Include="SetDlsResponse.h" />
+    <ClInclude Include="SetFrequencyResponse.h" />
+    <ClInclude Include="SetImageResponse.h" />
+    <ClInclude Include="SetMidiOutputPortResponse.h" />
+    <ClInclude Include="SetRateResponse.h" />
+    <ClInclude Include="SetTextResponse.h" />
+    <ClInclude Include="Sound3dResponse.h" />
+    <ClInclude Include="SoundFxResponse.h" />
+    <ClInclude Include="StopResponse.h" />
+    <ClInclude Include="TerminationResponse.h" />
+    <ClInclude Include="VideoLayoutResponse.h" />
+    <ClInclude Include="VolumeResponse.h" />
+    <ClInclude Include="WindowLayoutResponse.h" />
+    <ClInclude Include="MessageTypeToStringConverter.h" />
+    <ClInclude Include="PhaseToStringConverter.h" />
+    <ClInclude Include="SoundFxPartHeaderToSoundFxTypeConverter.h" />
+    <ClInclude Include="WaveformToStringConverter.h" />
+    <ClInclude Include="MessageType.h" />
+    <ClInclude Include="PlaybackResultType.h" />
+    <ClInclude Include="ResponseType.h" />
+    <ClInclude Include="PlayerTypeToStringConverter.h" />
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="SetPlayerTypeRequest.h" />
+    <ClInclude Include="SetPlayerTypeResponse.h" />
+    <ClInclude Include="ultraPlayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lightBlueSaxo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UltraPlayer.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
